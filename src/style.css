@@ -1,0 +1,173 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*  {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    --bg-color: #1E1E1E ;
+    --color: #FFFFFF ;
+}
+
+.container {
+    padding: 10px 0;
+    width: 100%;
+    background-color: var(--color);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: auto auto auto ;
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+.card {
+    width: 230px;
+    background-color: var(--bg-color);
+    color: var(--color);
+    padding: 6px;
+    border-radius: 20px;
+}
+
+.card .img {
+    width: 100%;
+}
+
+.card .img img {
+    width: 100%;
+    height: 35vh;
+    border-radius: 20px;
+}
+
+.card .text {
+    padding: 2px 2px;
+}
+
+.card .text h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card .text p {
+    font-size: 13px;
+    font-weight: 400;
+}
+.card .text .desc {
+    display: none;
+}
+
+.card .text .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card .text .card-bottom h3 {
+    font-size: 16px;
+}
+
+.card .text .card-bottom .icon {
+    color: var(--bg-color);
+    background-color: var(--color);
+    display: flex;
+    padding: 5px;
+    border-radius: 100%;
+    font-size:15px;
+    cursor: pointer;
+}
+
+
+@media (max-width : 760px) {
+    
+    .container {
+        padding: 10px 0;
+        grid-template-columns: auto auto ;
+        column-gap: 10%;
+        row-gap: 5%;
+    }
+
+}
+
+
+@media (max-width : 550px) {
+    .container1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        width: 90%;
+        grid-template-columns: auto ;
+        column-gap: 0;
+        row-gap: 20px;
+        
+    }
+    
+    .card {
+        width: 100%;
+        background-color: var(--bg-color);
+        color: var(--color);
+        padding: 6px;
+        border-radius: 25px;
+        display: flex;
+        position: relative;
+    }
+
+    .card .img {
+        width: 100%;
+    }
+
+    .card .img img {
+        width: 35vh;
+        height: 35vh;
+        border-radius: 20px;
+    }
+
+    .card .text {
+        padding: 10px;
+    }
+
+    .card .text h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .card .text p {
+        padding: 5px 0;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    .card .text .desc {
+        display: flex;
+        color: rgba(255, 255, 255, 0.904);
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .card .text .card-bottom {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card .text .card-bottom h3 {
+        font-size: 16px;
+    }
+
+    .card .text .card-bottom .icon {
+        color: var(--bg-color);
+        background-color: var(--color);
+        display: flex;
+        padding: 5px;
+        border-radius: 100%;
+        font-size:15px;
+    }
+
+
+}
